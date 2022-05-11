@@ -25,10 +25,20 @@ public class Media {
 		
 		media = (nota1 + nota2 + nota3 + nota4)/4;
 		
-		System.out.printf("Nome do aluno é %s possui as seguinte notas nota1=%d, nota2=%d, nota3=%d, nota4=%d. Sua média é: %2f" , 
+		System.out.printf("Nome do aluno é %s possui as seguinte notas nota1=%d, nota2=%d, nota3=%d, nota4=%d. Sua média é: %.2f" , 
 							nome_aluno, nota1, nota2, nota3, nota4, media);
+		
+		System.out.println("");
+		
+		if(media < 5 ) {
+			System.out.println("Aluno reprovado");
+		} else if(media == 5) {
+			System.out.println("Aluno recuperação");
+		}else {
+			System.out.println("Aluno aprovado");
+		}
 		
 		
 	}
-
+	
 }
