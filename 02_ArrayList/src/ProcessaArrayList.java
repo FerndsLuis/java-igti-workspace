@@ -20,8 +20,7 @@ public class ProcessaArrayList {
 		switch(opcao) {
 		case 1:
 			for(int x = 0; x < 3; x++)
-			{
-				opcao = null;
+			{				
 				System.out.println("Digite o nome: ");
 				nomes.add(teclado.nextLine());
 			}
