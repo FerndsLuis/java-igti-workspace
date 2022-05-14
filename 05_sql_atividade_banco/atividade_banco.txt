@@ -1,0 +1,57 @@
+/*
+Criar uma tabela de funcionários com os campos abaixo:
+id_funcionario
+nome_funcionario
+data_nascimento_funcionario
+funcao_funcionario
+salario_bruto_funcionario
+email_funcionario
+dependentes_funcionario  campo lógico.
+
+Inserir 6 registros
+
+Criar os seguintes selects:
+
+a- Mostrar todos os campos e todos os registros
+b- Mostrar somente os camos nome_funcionario e função_funcionario e 
+todos os registros
+c- Mostrar todos os campos e os registros ordenados pelo campo função_
+funcionário.
+d- Filtrar os funcionários pelo campo nome_funcionario
+e- Fazer um range pelo campo Id mostrando somente os registros 3 até 5.
+*/
+
+-- create tdatabase icarros;
+use icarros;
+create table funcionários(
+id_funcionario int not null primary key auto_increment,
+nome_funcionario varchar(50) not null,
+data_nascimento_funcionario date,
+funcao_funcionario varchar(50),
+salario_bruto_funcionario double,
+email_funcionario varchar(100),
+dependentes_funcionario boolean
+);
+
+-- Inserir 6 registros
+insert into icarros.funcionários values(null,"Luís Fernandes","1993-12-24","Desenvolvedor Júnior",3000,"luis.fernandes@icarros.com.br",0);
+insert into icarros.funcionários values(null,"Carlos Alberto","1983-01-24","Desenvolvedor Pleno",7000,"carlos.alberto@icarros.com.br",1);
+insert into icarros.funcionários values(null,"Thais Reis","2000-12-01","DBA Júnior",3000,"thais.reiss@icarros.com.br",0);
+insert into icarros.funcionários values(null,"Viviane Souza","1970-01-15","Especialista",15000,"viviane.souza@icarros.com.br",1);
+insert into icarros.funcionários values(null,"Douglas Barbosa","1990-12-15","Desenvolvedor Pleno",7000,"douglas.barbosa@icarros.com.br",0);
+insert into icarros.funcionários values(null,"Carina Almeida","1985-11-02","Desenvolvedor Pleno",7000,"carina.almeida@icarros.com.br",1);
+
+-- a- Mostrar todos os campos e todos os registros
+select * from icarros.funcionários;
+
+-- b- Mostrar somente os camos nome_funcionario e função_funcionario e todos os registros
+select nome_funcionario, funcao_funcionario from icarros.funcionários;
+
+-- c- Mostrar todos os campos e os registros ordenados pelo campo função_funcionário.
+select * from icarros.funcionários order by funcao_funcionario;
+
+-- d- Filtrar os funcionários pelo campo nome_funcionario
+select * from icarros.funcionários where nome_funcionario like '%C%';
+
+-- e- Fazer um range pelo campo Id mostrando somente os registros 3 até 5.
+select * from icarros.funcionários where id_funcionario between 3 and 5;
