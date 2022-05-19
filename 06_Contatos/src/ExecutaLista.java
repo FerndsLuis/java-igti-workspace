@@ -19,7 +19,6 @@ public class ExecutaLista {
 		contatos.add(contato4);
 		contatos.add(contato5);	
 		
-		
 		//total
 		System.out.println("Total de registros: " + contatos.size());
 		
