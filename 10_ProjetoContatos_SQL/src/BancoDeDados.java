@@ -73,6 +73,42 @@ public class BancoDeDados {
 	}
 	
 	
+	//atualizar registro
+	public void editarContato(int id, String nome, int idade, String email, String funcao) {
+		try {			
+			String query = "update icarros.icarros_contato set nome ='"+nome+"',idade="+idade+",email='"+email+"',funcao='"+funcao+"' where id="+id;
+			//System.out.println(query);
+			this.statement.executeUpdate(query);			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.err.println("Erro: " + e.getMessage());
+		}
+	}
+	
+	//inserindo registros
+	public void inserirContatos(String nome, int idade, String email, String funcao) {
+		try {
+			String query = "insert into icarros.icarros_contato (nome,idade,email,funcao) values('"+nome+"',"+ idade+",'"+email+"','"+ funcao+"')";
+			this.statement.execute(query);			
+			System.out.println(query);
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.err.println("Erro: " + e.getMessage());
+		}
+	}
+	
+	//exclusão de registros
+	public void deletarContato(int id) {
+		try {
+			String query = "delete from icarros.icarros_contato where id= "+id+";";
+			this.statement.executeUpdate(query);
+			System.out.println(query);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+	
+	
 	
 	
 }
