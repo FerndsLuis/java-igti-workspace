@@ -1,0 +1,2 @@
+Nome:a | Disciplina:ADM | Falta:a | Nota1:a | Nota2:a
+Nome:b | Disciplina:SIS | Falta:b | Nota1:b | Nota2:b

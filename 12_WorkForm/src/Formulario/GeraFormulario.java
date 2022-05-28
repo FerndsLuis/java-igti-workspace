@@ -96,16 +96,6 @@ public class GeraFormulario extends JFrame {
 		contentPane.add(scrollPane);
 		
 		table = new JTable();
-		table.addMouseListener(new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				int contador = table.getSelectedRow();
-				id.setText(model.getValueAt(contador, 0).toString());
-				nome.setText(model.getValueAt(contador, 1).toString());
-				email.setText(model.getValueAt(contador, 2).toString());
-				idade.setText(model.getValueAt(contador, 3).toString());
-			}
-		});
 		scrollPane.setViewportView(table);
 		model = new DefaultTableModel();
 		
