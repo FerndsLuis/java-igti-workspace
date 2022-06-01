@@ -1,6 +1,7 @@
 package model;
 
 public class Cliente {
+	
 	private String Ag;
 	private String Conta;
 	private String Nome;
@@ -38,7 +39,7 @@ public class Cliente {
 	public String getNome() {
 		return Nome;
 	}
-	public void setNome(String nome) {
+	public void setNome(String nome) {		
 		Nome = nome;
 	}
 	public String getEmail() {
