@@ -152,8 +152,9 @@ public class Sistema extends JFrame {
 		model = new DefaultTableModel();
 		Object[] column = {"Nome","Duração"};
 		Object[] row = new Object[2];
-		model.setColumnIdentifiers(column);
+		
 		table.setModel(model);
+		model.setColumnIdentifiers(column);
 		
 		
 		
