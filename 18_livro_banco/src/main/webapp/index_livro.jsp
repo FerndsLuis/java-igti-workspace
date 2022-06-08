@@ -6,12 +6,10 @@
 </head>
 <body>
 	<h1>Listagem de Livros</h1>
-	<%@ page import="dao.ListarLivros, model.Livro, java.util.*" %>	
-	<%@ taglib uri="http://java.sun.com/jstl/core" prefix="c" %> 
+	<%@ page import="dao.ListarLivros, model.Livro, java.util.*" %>
 	
 	<%
-		List<Livro> list = ListarLivros.lista();
-		request.setAttribute("list", list);	
+		List<Livro> list = ListarLivros.lista();		
 //Projeto Agenda
 //Index_Livros.jsp
 
@@ -21,13 +19,19 @@
 //Id_Livro    Nome_Livro
 	%>
 	
-	<table>
+	<table border="1">
 		<tr>
 			<th>ID</th>
 			<th>Nome</th>
-		</tr>
-		<tr>
-		</tr>
+		</tr>		
+			<%
+			for(int x = 0; x < list.size(); x++){
+				out.print("<tr>");
+				out.print("<td>"+ list.get(x).getId() +"</td>");
+				out.print("<td>"+ list.get(x).getNome() +"</td>");
+				out.print("</tr>");
+			}				
+			%>
 	</table>
 	
 </body>
