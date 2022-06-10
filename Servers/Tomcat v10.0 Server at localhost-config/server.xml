@@ -134,7 +134,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="17_WebProject1" path="/17_WebProject1" reloadable="true" source="org.eclipse.jst.jee.server:17_WebProject1"/><Context docBase="18_NavegacaoWeb" path="/18_NavegacaoWeb" reloadable="true" source="org.eclipse.jst.jee.server:18_NavegacaoWeb"/><Context docBase="18_WebCad" path="/18_WebCad" reloadable="true" source="org.eclipse.jst.jee.server:18_WebCad"/><Context docBase="18_livro_banco" path="/18_livro_banco" reloadable="true" source="org.eclipse.jst.jee.server:18_livro_banco"/></Host>
+      <Context docBase="17_WebProject1" path="/17_WebProject1" reloadable="true" source="org.eclipse.jst.jee.server:17_WebProject1"/><Context docBase="18_NavegacaoWeb" path="/18_NavegacaoWeb" reloadable="true" source="org.eclipse.jst.jee.server:18_NavegacaoWeb"/><Context docBase="18_WebCad" path="/18_WebCad" reloadable="true" source="org.eclipse.jst.jee.server:18_WebCad"/><Context docBase="18_livro_banco" path="/18_livro_banco" reloadable="true" source="org.eclipse.jst.jee.server:18_livro_banco"/><Context docBase="19_WebCursos" path="/19_WebCursos" reloadable="true" source="org.eclipse.jst.jee.server:19_WebCursos"/></Host>
     </Engine>
   </Service>
 </Server>
