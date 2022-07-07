@@ -1,0 +1,26 @@
+package teste;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int ini = 0, fim =25;
+		
+		System.out.println(ini + fim);
+		
+		ini = fim%7;
+		fim = ini *3;
+		
+		ini = ini + 4;
+		fim = fim -4;
+		
+		ini /= 2;
+		fim += 10;
+		
+		
+		
+				
+	}
+
+}

@@ -1,0 +1,43 @@
+import java.util.ArrayList;
+
+public class Agenda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu		
+		BuscaDeContatos busca = new BuscaDeContatos();
+		
+		busca.conectar();
+
+		if(busca.estaConectado()) {
+			//System.out.println("Conectado ao banco");
+			//busca.listarContatos();
+			
+			System.out.println("--------------------");
+			//busca.listarContatos();		
+			//busca.editarContato(5, "Carlos", 20, "carlos@hot", "Estagiario");
+			//busca.listarContatos();
+				
+			ArrayList<String[]> contatos = new ArrayList<String[]>();
+			contatos.add(new String[]{"Joana","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Matheus","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Thales","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Thaís","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Lucas","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Daniela","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Caio","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Lucas","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Carina","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Ricardo","10","contato@gmail.com","Dev"});
+			contatos.add(new String[]{"Noa","10","contato@gmail.com","Dev"});
+			
+			for(int x = 0; x < contatos.size(); x++) {
+				busca.inserirContatos(contatos);
+			}
+			
+			
+		} else {
+			System.err.println("Erro ap conectar ao banco");
+		}
+	}
+
+}

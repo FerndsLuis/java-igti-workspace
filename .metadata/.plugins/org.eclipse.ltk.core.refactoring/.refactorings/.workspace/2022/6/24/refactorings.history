@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;17_WebCad&apos; to &apos;18_WebCad&apos;" description="Rename resource &apos;17_WebCad&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/17_WebCad" name="18_WebCad" stamp="1654648652504" updateReferences="true"/>
+</session>

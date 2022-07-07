@@ -1,0 +1,12 @@
+127.0.0.1 - - [10/Jun/2022:18:59:50 -0300] "GET / HTTP/1.1" 404 764
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:18:59:54 -0300] "GET /19_WebCursos/modificar.jsp HTTP/1.1" 200 3109
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:18:59:54 -0300] "GET /favicon.ico HTTP/1.1" 404 775
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:01 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3110
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:11 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3114
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:12 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=1 HTTP/1.1" 200 3114
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:13 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3114
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:13 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3114
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:14 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=1 HTTP/1.1" 200 3114
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:03:15 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3114
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:09:33 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3132
+0:0:0:0:0:0:0:1 - - [10/Jun/2022:19:09:33 -0300] "GET /19_WebCursos/modificar.jsp?atualizar=2 HTTP/1.1" 200 3132

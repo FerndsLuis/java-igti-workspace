@@ -1,0 +1,31 @@
+import java.util.ArrayList;
+
+public class Agenda {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stu		
+		BuscaDeContatos busca = new BuscaDeContatos();
+		
+		busca.conectar();
+
+		if(busca.estaConectado()) {
+			//System.out.println("Conectado ao banco");
+			//busca.listarContatos();
+			
+			System.out.println("--------------------");
+			//busca.listarContatos();		
+			//busca.editarContato(5, "Carlos", 20, "carlos@hot", "Estagiario");
+			//busca.listarContatos();
+			AgendaModel agenda = new AgendaModel(null,"Joana",10,"curgo@gmail","Dev");
+			
+			{Joana,Matheus,Thales,Thaís,Lucas,Daniela,Caio,Lucas,Carina,Ricardo,Noa)
+
+			ArrayList<String> contatos = new ArrayList<String>();
+			
+			busca.inserirContatos("luis", 10, "luis@gmail", "Dev");
+		} else {
+			System.err.println("Erro ap conectar ao banco");
+		}
+	}
+
+}

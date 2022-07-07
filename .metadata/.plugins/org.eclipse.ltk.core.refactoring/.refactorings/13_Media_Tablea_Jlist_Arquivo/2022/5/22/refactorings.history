@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Form.Relatório&apos; to &apos;Relatorio&apos;&#x0D;&#x0A;- Original project: &apos;13_Media_Tablea_Jlist_Arquivo&apos;&#x0D;&#x0A;- Original element: &apos;Form.Relatório&apos;&#x0D;&#x0A;- Renamed element: &apos;Form.Relatorio&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Relatório&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;Form{Relatório.java[Relatório" matchStrategy="1" name="Relatorio" qualified="false" references="true" similarDeclarations="false" stamp="1653766448970" textual="false" version="1.0"/>
+</session>

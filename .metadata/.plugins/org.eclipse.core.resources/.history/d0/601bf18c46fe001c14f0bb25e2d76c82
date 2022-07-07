@@ -1,0 +1,11 @@
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+//anotação de controle da classe da API
+@RestController 
+@RequestMapping("/mensagem")
+public class MensagemSpring {
+	
+}

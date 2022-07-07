@@ -1,0 +1,78 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.util.Scanner;
+
+public class BancoDeDados {
+	
+	//criando váriaveis privadas
+	protected Connection connection = null;
+	protected java.sql.Statement statement = null;
+	protected ResultSet resultset = null;
+	
+	//iremos neste processo se conectar ao banco de dados
+	//fazendo a passagem de parâmetros
+	public void conectar() {
+		
+		//criando variáveis de conexão
+		String servidor = "jdbc:mysql://localhost/ICARROS";
+		
+		//usuário do banco e senha
+		String usuario = "root";
+		String senha = "root";
+		
+		//varável para vincular o Driver de conexão
+		String driver = "com.mysql.cj.jdbc.Driver";
+		
+		//verificar se o banco efetuou a conexão
+		try {
+			Class.forName(driver);
+			this.connection = DriverManager.getConnection(servidor, usuario, senha);
+			this.statement = this.connection.createStatement();
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.err.print("Error ao conectar: " + e.getMessage());
+		}		
+	}
+	
+	//testar conexão
+	public boolean estaConectado() {
+		if(this.connection != null) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
+	//listar os registro no banco
+	public void listarContatos() {
+		try {
+			
+			//variável para o retorno do mysql
+			String query = "select * from icarros.icarros_contato";
+			this.resultset = this.statement.executeQuery(query);
+			this.statement = this.connection.createStatement();
+			
+			//Laço de repetição
+			while(this.resultset.next()) {
+				//variáveis para receber os campos do banco
+				String meuID = resultset.getString("id");
+				String meuNome = resultset.getString("nome");
+				int minhaIdade = resultset.getInt("idade");
+				String meuEmail = resultset.getString("email");
+				String minhFuncao = resultset.getString("funcao");
+				
+				System.out.println(
+				meuID +" | "+ meuNome +" | "+ minhaIdade +" | "+ meuEmail + " | "+ minhFuncao);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.err.println("Erro ao listar: "+ e.getMessage());
+		}
+	}
+	
+	
+	
+	
+}
