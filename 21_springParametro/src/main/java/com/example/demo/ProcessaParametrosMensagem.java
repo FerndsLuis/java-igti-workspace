@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/")
 public class ProcessaParametrosMensagem {
-	
-		//método com parâmetro
-		@GetMapping("/paramentro/{nome}/{idade}")
-		public String mensagemParamentro(@PathVariable String nome, @PathVariable  String idade) {
-			return "Olá "+nome+" a sua idade é "+ idade +" anos";
-		}
+
+	// método com parâmetro
+	@GetMapping("/paramentro/{nome}/{idade}")
+	public String mensagemParamentro(@PathVariable String nome, @PathVariable String idade) {
+		return "Olá " + nome + " a sua idade é " + idade + " anos";
+	}
 }
